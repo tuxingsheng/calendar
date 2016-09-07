@@ -80,21 +80,6 @@
                 })
             }
         },
-        /*
-         * @name getNextMonthDate
-         * @type function
-         * @explain 获取下个月的年月
-         * */
-        getNextMonthDate: function (year, month) {
-            if (month > 12) {
-                year = year + Math.floor(( month - 1 ) / 12);
-                month = (month % 12 == 0 ? 12 : month % 12);
-            }
-            return {
-                year: year,
-                month: month
-            }
-        },
         getStringDate: function (date) {
             if (typeof date == 'string') {
                 var a = date.split('-'), i = 0;
