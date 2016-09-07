@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* ue-calendar start */
+
+html, body {
+    /*font-family: 微软雅黑, Helvetica;*/
+}
+
+.ue-calendar {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.ue-calendar-popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.ue-calendar-shade {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    z-index: 69;
+}
+
+.ue-calendar-cl-03C7AD {
+    color: #03C7AD !important;
+}
+
+.ue-calendar-cl-orange {
+    color: #FF902D !important;
+}
+
+.ue-calendar-cl-cfcfcf {
+    color: #cfcfcf !important;
+}
+
+.ue-calendar-title {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #585858;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F7F7F7;
+}
+
+.ue-calendar-nav {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    background-color: #F7F7F7;
+}
+
+.ue-calendar-nav-name {
+    width: 14.28%;
+    height: 100%;
+    float: left;
+}
+
+.ue-calendar-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px 0 0 0;
+}
+
+.ue-calendar-grid {
+    position: relative;
+    width: 14.28%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    margin: 5px 0;
+    padding-bottom: 5px;
+    color: #000;
+}
+
+.ue-calendar-grid:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.ue-calendar-grid > span {
+    display: block;
+    font-size: 13px;
+}
+
+.ue-calendar-grid > span:nth-last-child(1) {
+    display: none;
+}
+
+.ue-calendar-grid.ue-mini > span {
+    height: 22px;
+    line-height: 22px;
+}
+
+.ue-calendar-grid.ue-mini > span:nth-last-child(1) {
+
+    display: block;
+}
+
+.ue-calendar-grid.ue-active {
+    background-color: #03C7AD !important;
+    color: #fff !important;
+    /*-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;*/
+}
+
+.ue-calendar-headline {
+    margin: 0 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.ue-calendar-left, .ue-calendar-right {
+    font-size: 30px;
+    width: 50px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #ccc;
+}
+
+.ue-calendar-left {
+    float: left;
+}
+
+.ue-calendar-right {
+    float: right;
+}
+
+/* ue-calendar end */
